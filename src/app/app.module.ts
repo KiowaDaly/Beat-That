@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ShopComponent } from './components/shop/shop.component';
+import { RouterModule } from '@angular/router';
+import { AboutComponent } from './components/about/about.component';
+
 
 
 @NgModule({
@@ -12,11 +15,13 @@ import { ShopComponent } from './components/shop/shop.component';
     AppComponent,
     UserComponent,
     HomepageComponent,
-    ShopComponent
+    ShopComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],
