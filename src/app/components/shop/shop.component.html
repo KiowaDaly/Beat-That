@@ -1,4 +1,25 @@
-<h1>This is the shop</h1>
-<p> in the shop we have fancy records on sale</p>
+<div class="navbar">
+  <a routerLink="basket">Basket</a>
+  <a routerLink="">another option</a>
+  <div class="dropdown">
+    <button class="dropbtn">Rock
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Metal</a>
+      <a href="#">Punk</a>
+      <a href="#">Country</a>
+    </div>
+  </div>
+</div>
+
+<ul class="records">
+  <li *ngFor="let record of records">
+    <a routerLink="/detail/{{record.id}}">
+      <span class="badge">{{record.id}}</span> {{record.name}}
+    </a>
+  </li>
+</ul>
+
 
 

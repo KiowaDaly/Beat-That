@@ -4,7 +4,7 @@ export class Record {
 
   id: number;
   name: string;
-  url: string;
+  genre: string;
 
 
 }
